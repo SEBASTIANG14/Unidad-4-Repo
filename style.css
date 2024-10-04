@@ -1,0 +1,90 @@
+body {
+  font-family: Arial, sans-serif;
+}
+.form-container {
+  width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #d592e6;
+  border: 2px solid gray;
+  border-radius: 10px;
+}
+.form-container h1 {
+  font-weight: bold;
+  text-align: center;
+  color: limegreen;
+  font-size: 24px;
+}
+.form-container legend {
+  display: block;
+  margin: 10px 0 5px;
+  color: limegreen;
+}
+.form-container input[type="email"],
+.form-container input[type="password"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+.form-container .roles {
+  margin: 20px 0;
+  padding: 10px;
+  border: 2px solid gray;
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  border-radius: 5px;
+}
+.form-container .roles label.admin {
+  background-color: #0f5ba8;
+  padding: 5px;
+  color: #000;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+.form-container .roles label.gerente {
+  background-color: #3bb5b5;
+  padding: 5px;
+  color: #000;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+.form-container .roles label.prop {
+  background-color: #8cbf60;
+  padding: 5px;
+  color: #000;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+.form-container .roles label.agente {
+  background-color: #ffbf86;
+  padding: 5px;
+  color: #000;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+.form-container .roles label.prospecto {
+  background-color: #c85252;
+  padding: 5px;
+  color: #000;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+.form-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: white;
+  color: #000;
+  border: 1px solid gray;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.form-container a {
+  text-align: center;
+  margin-top: 20px;
+  color: #0800ff;
+  text-decoration: none;
+}
+.form-container a:hover {
+  text-decoration: underline;
+}

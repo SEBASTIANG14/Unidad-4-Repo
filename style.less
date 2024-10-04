@@ -1,0 +1,98 @@
+@base-color: #d592e6;
+@text-color: limegreen;
+@border-color: gray;
+@font-color: #000;
+
+@admin-color: #0f5ba8;
+@manager-color: #3bb5b5;
+@owner-color: #8cbf60;
+@sales-agent-color: #ffbf86;
+@prospect-color: #c85252;
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.form-container {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: @base-color;
+    border: 2px solid @border-color;
+    border-radius: 10px;
+
+    h1 {
+        font-weight: bold;
+        text-align: center;
+        color: @text-color;
+        font-size: 24px;
+    }
+
+    legend {
+        display: block;
+        margin: 10px 0 5px;
+        color: @text-color;
+    }
+
+    input[type="email"], input[type="password"] {
+        width: calc(100% - 20px);
+        padding: 10px;
+        border: 1px solid @border-color;
+        border-radius: 5px;
+    }
+
+    .role-style(@color) {
+        background-color: @color;
+        padding: 5px;
+        color: @font-color;
+        margin: 5px 0;
+        border-radius: 5px;
+    }
+
+    .roles {
+        margin: 20px 0;
+        padding: 10px;
+        border: 2px solid @border-color;
+        display: grid;
+        grid-template-rows: repeat(5, 1fr);
+        border-radius: 5px;
+
+        label {
+            &.admin {
+                .role-style(@admin-color);
+            }
+            &.gerente {
+                .role-style(@manager-color);
+            }
+            &.prop {
+                .role-style(@owner-color);
+            }
+            &.agente {
+                .role-style(@sales-agent-color);
+            }
+            &.prospecto {
+                .role-style(@prospect-color);
+            }
+        }
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        background-color: white;
+        color: @font-color;
+        border: 1px solid @border-color;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    a {
+        text-align: center;
+        margin-top: 20px;
+        color: #0800ff;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
